@@ -6,15 +6,16 @@
     <title>React In Depth</title>
 </head>
 <body>
+
     <div id="root"> </div>
 
-    <script>
-        // Always declare a variable with const when you know that the value should not be changed. 
-        const heading = document.createElement('h1');
-        heading.innerHTML = 'React In Depth by javascript';
-
-        const root = document.getElementById('root');
-        root.appendChild(heading);
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ 
+    <script> 
+        const heading = React.createElement('h1', {}, "Hello World from React!");
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(heading);
     </script>
 
 </body>
