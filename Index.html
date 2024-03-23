@@ -6,8 +6,16 @@
     <title>React In Depth</title>
 </head>
 <body>
-    <div id="root">
-        <h1> Hello world! </h1>
-    </div>
+    <div id="root"> </div>
+
+    <script>
+        // Always declare a variable with const when you know that the value should not be changed. 
+        const heading = document.createElement('h1');
+        heading.innerHTML = 'React In Depth by javascript';
+
+        const root = document.getElementById('root');
+        root.appendChild(heading);
+    </script>
+
 </body>
 </html>
