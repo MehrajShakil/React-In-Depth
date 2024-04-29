@@ -38,4 +38,5 @@ const parent = React.createElement("div", { id: "parent" }, [
 console.log(parent) // heading is a js object.
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+// react dom, replace every thing inside the root element.
 root.render(parent);
