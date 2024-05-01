@@ -1,0 +1,28 @@
+{
+  "name": "react_in_depth",
+  "version": "1.0.0",
+  "description": "React in depth course",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MehrajShakil/React-In-Depth.git"
+  },
+  "keywords": [],
+  "author": "MehrajShakil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MehrajShakil/React-In-Depth/issues"
+  },
+  "homepage": "https://github.com/MehrajShakil/React-In-Depth#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

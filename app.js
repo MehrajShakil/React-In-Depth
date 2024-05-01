@@ -22,6 +22,9 @@ React come with "JSX"
 Don't know what it "JSX", let's move into next.
 */
 
+import { React } from "react";
+import { ReactDOM } from "react-dom";
+
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I'm h1 heading"),
