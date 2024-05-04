@@ -23,7 +23,7 @@ Don't know what it "JSX", let's move into next.
 */
 
 import  React  from "react";
-import  ReactDOM  from "react-dom";
+import  ReactDOM  from "react-dom/client";
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
@@ -35,8 +35,6 @@ const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("h2", {}, "I'm h2 heading"),
   ]),
 ]);
-
-
 
 console.log(parent) // heading is a js object.
 
