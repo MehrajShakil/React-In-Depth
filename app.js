@@ -1,43 +1,16 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-/*
-Creating nested element.
+// React Element
+const Title = () => <h1 id="heading">React In Depth using JSX </h1>;
 
-<div id="parent">
-    <div id="child1">
-        <h1> I'm h1 </h1>
-        <h2> I'm h2 </h2>
-    </div>
-    <div id="child2">
-        <h1> I'm h1 </h1>
-        <h2> I'm h2 </h2>
-    </div>
-</div>
-
-ReactElement(object) => (when render), HTML(Browser understands)  
-
-This is just a massy solution to creating just this nested html elements.
-
-To sovle this, 
-React come with "JSX" 
-Don't know what it "JSX", let's move into next.
-*/
-
-import  React  from "react";
-import  ReactDOM  from "react-dom/client";
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "I'm h1 heading"),
-    React.createElement("h2", {}, "I'm h2 heading"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm h1 heading"),
-    React.createElement("h2", {}, "I'm h2 heading"),
-  ]),
-]);
-
-console.log(parent) // heading is a js object.
+// React functional Component - is just a normal js function.
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 id="heading"> React In Depth Functional Component </h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// react dom, replace every thing inside the root element.
-root.render(parent);
+root.render(<HeadingComponent />);
