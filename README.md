@@ -54,3 +54,9 @@
 
 - export using add export keyword before the actual variable,
 - import, using "import {name of variable} from path"
+
+## React Hooks
+
+- They are normal JS utility functions
+- useState() hook, 80% using - Superpowerful state variables in React
+- useEffect() hook, these two are most important hook. 20% using.

@@ -4,7 +4,7 @@ export const restaurantList = [
       id: "1",
       name: "Meghna Foods",
       cuisine: "Dhaka",
-      avgRating: "4.5",
+      avgRating: "3.5",
       costForTwo: 40000,
       deliveryTime: 36,
       imageUrl:
